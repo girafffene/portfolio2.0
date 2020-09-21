@@ -21,10 +21,10 @@ const Project = ({ description, title, github, stack, url, index }) => {
         
         <div className="project-links">
           <a href={github}>
-            <FaShareSquare className="project-icon" />
+            <FaGithubSquare className="project-icon" />
           </a>
           <a href={url}>
-            <FaGithubSquare className="project-icon" />
+            <FaShareSquare className="project-icon" />
           </a>
         </div>
       </div>
