@@ -18,7 +18,7 @@ const query = graphql`
 const Hero = () => {
   const {
     file: {
-      childImageSharp: {fluid},
+      childImageSharp: { fluid },
     },
   } = useStaticQuery(query)
 
@@ -28,8 +28,8 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>Hi, I'm Irene!</h1>
-            <h4>Junior Software Engineer</h4>
+            <h1>Hi, I'm Irene Perez</h1>
+            <h4>Front End Software Engineer</h4>
             <Link to="/contact" className="btn">contact</Link>
             <SocialLinks />
           </div>
