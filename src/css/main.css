@@ -145,7 +145,7 @@ p {
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-primary-5);
+  color: white;
   background: var(--clr-primary-8);
 }
 .center-btn {
