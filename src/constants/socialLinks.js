@@ -13,7 +13,7 @@ const data = [
   {
     id: 2,
     icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    url: "https://twitter.com/devRene0217",
   },
 ]
 const links = data.map(link => {
