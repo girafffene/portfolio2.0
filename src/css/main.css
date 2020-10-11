@@ -289,7 +289,7 @@ Navbar
 Sidebar
 ===============*/
 .sidebar {
-  background: var(--clr-grey-10);
+  background: ghostwhite;
   position: fixed;
   top: 0;
   left: 0;
