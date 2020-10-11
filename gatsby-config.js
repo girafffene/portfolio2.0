@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
-    image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    title: "IPerez",
+    description: "This is Irene's Portfolio Site",
+    author: "@ireneperez",
+    twitterUsername: "@devRene_0217",
+    siteUrl: "https://irene-perez.netlify.app/",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -24,7 +23,6 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
-        //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         contentTypes: [`jobs`, `projects`,],
         singleTypes: [`about`,],
       },
