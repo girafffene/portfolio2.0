@@ -1,5 +1,8 @@
+//imported dependencies
 import React from "react"
+//imported title component
 import Title from "./Title"
+//importing services
 import services from "../constants/services"
 
 const Services = () => {
