@@ -1,26 +1,32 @@
-import React from "react"
-import Layout from "../components/Layout"
-import { graphql } from "gatsby"
-import Title from "../components/Title"
-import Image from "gatsby-image"
+//imported dependencies
+import React from "react" //React
+import { graphql } from "gatsby"//graphql
+import Image from "gatsby-image"//Gatsby's image
+//imported components
+import Layout from "../components/Layout" //layout
+import Title from "../components/Title" //title component
+import SEO from "../components/SEO" //seo component
+
 const About = ({
   data: {
     about: { nodes },
   },
 }) => {
-  const{ info, stack, title, image } = nodes[0]
+  const{ desc, stack, title, src } = nodes[0];
+
   return (
     <Layout>
+      <SEO title="About Me" description="This page is about Irene" />
       <section className="about-page">
         <div className="section-center about-center">
-          <Image fluid={image.childImageSharp.fluid} className="about-img"/>
+          <Image fluid={src.childImageSharp.fluid} className="about-img"/>
           <article className="about-text">
             <Title title={title} />
-            <p>{info}</p>
+            <p>{desc}</p>
             <div className="about-stack">
               {stack.map((item) => {
                 return (
-                  <span key={item.id}>{item.title}</span>
+                  <span key={item.id}>{item.name}</span>
                 )
               })}
             </div>
@@ -33,15 +39,15 @@ const About = ({
 
 export const query = graphql`
   {
-    about: allStrapiAbout {
+    about:allStrapiAbout {
       nodes {
-        title
         stack {
           id
-          title
+          name
         }
-        info
-        image {
+        title
+        desc
+        src {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
