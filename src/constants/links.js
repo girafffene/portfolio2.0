@@ -1,5 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
+//imported dependencies
+import React from "react" //react
+import { Link } from "gatsby" //gatsby's link
+
 const data = [
   {
     id: 1,
