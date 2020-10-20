@@ -1,5 +1,8 @@
+//imported React dependency
 import React from "react"
+//imported icons
 import { FaCode, FaSketch } from "react-icons/fa"
+
 export default [
   {
     id: 1,
