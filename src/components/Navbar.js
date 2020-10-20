@@ -1,6 +1,10 @@
-import React from "react"
+//imported dependencies
+import React from "react" //React
+//imported logo
 import logo from "../assets/logo.png"
+//imported icons
 import { FaAlignRight } from "react-icons/fa"
+//imported links
 import PageLinks from "../constants/links"
 
 const Navbar = ({ toggleSidebar }) => {
