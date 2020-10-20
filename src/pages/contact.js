@@ -1,10 +1,10 @@
 //imported dependencies
-import React, { useState } from "react"
-import styled from "styled-components"
-import Validator from "validator"
-
+import React, { useState } from "react" //React && use state
+import styled from "styled-components" //styled components
+import Validator from "validator" //validator
 //imported components
-import Layout from "../components/Layout"
+import Layout from "../components/Layout" //layout
+import SEO from "../components/SEO"
 
 const Contact = () => {
   //setting name & name error's initial state to "empty string"
@@ -100,6 +100,7 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO title="Contact" description="This is my contact page, where you can send any inquiry straight to my inbox!"/>
       <ContactForm className="contact-page">
         <article className="contact-form">
           <h3>get in touch</h3>
