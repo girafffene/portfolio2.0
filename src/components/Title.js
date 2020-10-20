@@ -1,3 +1,4 @@
+//importing react dependency
 import React from "react"
 
 const Title = ({ title }) => {
