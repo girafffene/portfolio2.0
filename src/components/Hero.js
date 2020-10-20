@@ -1,8 +1,12 @@
-import React from "react"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
+//imported dependencies
+import React from "react" //React
+import { graphql, useStaticQuery, Link } from "gatsby" //Gatsby's Link, use static query, graphql
+import Img from "gatsby-image" //Gatsby's Image
+
+//importing social media links
 import SocialLinks from "../constants/socialLinks"
+
+//media query to pull in my picture
 const query = graphql`
   {
     file(relativePath: {eq: "me-blue-foil.png"}) {
