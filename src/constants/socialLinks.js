@@ -1,4 +1,6 @@
+//imported react dependency
 import React from "react"
+//imported icons
 import {
   FaLinkedin,
   FaTwitterSquare,
@@ -16,6 +18,7 @@ const data = [
     url: "https://twitter.com/devRene0217",
   },
 ]
+
 const links = data.map(link => {
   return (
     <li key={link.id}>
