@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `https://strapi-portfolio-irene.herokuapp.com`,
         queryLimit: 5000, 
         contentTypes: [`jobs`, `projects`, `blogs`],
         singleTypes: [`about`],
