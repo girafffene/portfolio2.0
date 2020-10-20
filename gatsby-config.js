@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: "IPerez",
-    description: "This is Irene's Portfolio Site",
-    author: "@ireneperez",
+    description: "This is Irene's Portfolio Website",
+    author: "Irene Perez",
     twitterUsername: "@devRene_0217",
-    siteUrl: "https://irene-perez.netlify.app/",
+    image: "/pexels-negative-space-169573.jpg",
+    siteUrl: "https://irene-perez.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -22,9 +23,9 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        contentTypes: [`jobs`, `projects`,],
-        singleTypes: [`about`,],
+        queryLimit: 5000, 
+        contentTypes: [`jobs`, `projects`, `blogs`],
+        singleTypes: [`about`],
       },
     },
     {
