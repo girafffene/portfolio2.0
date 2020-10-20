@@ -1,17 +1,20 @@
-import React from "react"
-import Layout from "../components/Layout"
-import { graphql } from "gatsby"
-import Projects from "../components/Projects"
+//imported dependencies
+import React from "react"//react
+import { graphql } from "gatsby"//graphql
+
+//imported components
+import Layout from "../components/Layout"//layout
+import Projects from "../components/Projects"//projects
+import SEO from "../components/SEO"//SEO
 
 const ProjectsPage = ({
-  data: {
-    allStrapiProjects: { nodes: projects },
-  },
+  data: { allStrapiProjects: { nodes: projects } }
 }) => {
   return (
     <Layout>
+      <SEO title="Projects" description="This page shows you all of my projects." />
       <section className="projects-page">
-        <Projects projects={projects} title="all projects" />
+        <Projects projects={projects} title="All Projects" />
       </section>
     </Layout>
   )
@@ -23,12 +26,19 @@ export const query = graphql`
       nodes {
         github
         id
-        description
+        desc
         title
         url
+        src {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         stack {
           id
-          title
+          name
         }
       }
     }
