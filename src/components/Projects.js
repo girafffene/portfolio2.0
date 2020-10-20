@@ -1,23 +1,23 @@
-import React from "react"
-import Title from "./Title"
-import Project from "./Project"
-import { Link } from "gatsby"
+//imported dependencies
+import React from "react" //React
+import { Link } from "gatsby" //Gatsby's Link
+//imported components
+import Title from "./Title" //title
+import Project from "./Project" //project
 
-const Projects = ({projects, title, showLink}) => {
+const Projects = ({ projects, title, showLink }) => {
+
   return (
     <section className="section projects">
       <Title title={title} />
       <div className="section-center projects-center">
-        {projects.map((pro, index) => {
-          return (
-            <Project key={pro.id} index={index} {...pro} />
-          )
+        {projects.map((project, index) => {
+          return <Project key={project.id} index={index} {...project} />
         })}
       </div>
-      
-      {showLink && (
-        <Link to="/projects" className="btn center-btn">projects</Link>
-      )}
+      {
+        showLink && <Link to="/projects" className="btn center-btn">Projects</Link>
+      }
     </section>
   )
 }
