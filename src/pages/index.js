@@ -37,13 +37,6 @@ export const query = graphql`
         desc
         title
         url
-        src {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         stack {
           id
           name
@@ -60,13 +53,6 @@ export const query = graphql`
         id
         title
         category
-        src {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
