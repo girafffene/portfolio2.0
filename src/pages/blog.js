@@ -27,13 +27,6 @@ export const query = graphql`
         id
         title
         category
-        src {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
