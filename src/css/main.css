@@ -233,7 +233,7 @@ Blog
 .blog-img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  height: 15rem;
+  height: 24rem;
 }
 .blog-card {
   padding: 1.5rem 1rem;
@@ -269,14 +269,14 @@ Blog
     grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
     column-gap: 2rem;
   }
-  .blog-img {
+  /* .blog-img {
     height: 17.5rem;
-  }
+  } */
 }
 @media screen and (min-width: 850px) {
-  .blog-img {
+  /* .blog-img {
     height: 13.75rem;
-  }
+  } */
 }
 
 /*=============== 
@@ -710,10 +710,19 @@ Projects
 .project-img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  height: 19rem;
+  position: relative;
+  /* height: 19rem; */
+  max-width: 780px;
+  max-height: 480px;
   z-index: 1;
 }
-.project-img::after {
+.project-img::before {
+  content: "";
+  position: absolute;
+  background-color: hotpink;
+  height: 5rem;
+}
+/* .project-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -723,7 +732,7 @@ Projects
   background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
   opacity: 0.85;
   transition: var(--transition);
-}
+} */
 .project:hover .project-img::after {
   opacity: 0;
 }
@@ -921,7 +930,6 @@ About Page
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
-    column-gap: 4rem;
   }
   .about-img {
     grid-column: 1 / span 5;
