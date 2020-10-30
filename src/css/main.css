@@ -230,11 +230,6 @@ Blog
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
-.blog-img {
-  border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius);
-  height: 24rem;
-}
 .blog-card {
   padding: 1.5rem 1rem;
 }
@@ -269,14 +264,6 @@ Blog
     grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
     column-gap: 2rem;
   }
-  /* .blog-img {
-    height: 17.5rem;
-  } */
-}
-@media screen and (min-width: 850px) {
-  /* .blog-img {
-    height: 13.75rem;
-  } */
 }
 
 /*=============== 
