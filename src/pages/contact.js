@@ -1,6 +1,5 @@
 //imported dependencies
 import React, { useState } from "react" //React && use state
-import styled from "styled-components" //styled components
 import Validator from "validator" //validator
 //imported components
 import Layout from "../components/Layout" //layout
@@ -101,7 +100,7 @@ const Contact = () => {
   return (
     <Layout>
       <SEO title="Contact" description="This is my contact page, where you can send any inquiry straight to my inbox!"/>
-      <ContactForm className="contact-page">
+      <section className="contact-page">
         <article className="contact-form">
           <h3>get in touch</h3>
           <form action="https://formspree.io/mlepzjjr" method="POST" onSubmit={onSubmit}>
@@ -114,28 +113,9 @@ const Contact = () => {
             {status === "SUCCESS" ? <p>Thanks! Your message has been submitted. I'll be in contact soon!</p> : <button type="submit" className="submit-btn btn">Submit here</button>}
           </form>
         </article>
-      </ContactForm>
+      </section>
     </Layout>
   )
 }
-
-const ContactForm = styled.section`
-  h3 {
-    color: rgb(149, 175, 215);
-  }
-  input:focus, textarea:focus, button:focus {
-    outline: none;
-  }
-
-  input::placeholder, textarea::placeholder {
-    color: white;
-  }
-
-  #input-error {
-    ::placeholder {
-      color: #B22222;
-    }
-  }
-`
 
 export default Contact
