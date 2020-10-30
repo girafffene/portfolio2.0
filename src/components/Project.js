@@ -1,16 +1,17 @@
 //imported dependencies
 import React from "react" //React
 import PropTypes from "prop-types" //PropTypes
+import Image from "gatsby-image" //Gatbsy's image plugin
 
 //imported icons
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 
-const Project = ({ desc, title, github, stack, url, index }) => {
+const Project = ({ desc, title, github, stack, url, index, src, alt }) => {
   return (
     <article className="project">
-      {/* {src && (
-        <img src={src.childImageSharp.fluid.src} className="blog-img" alt={imageAlt} />
-      )} */}
+      {src && (
+        <Image fluid={src.childImageSharp.fluid} className="project-img" alt={alt} />
+      )}
 
       <div className="project-info">
         <span className="project-number">0{index + 1}.</span>
