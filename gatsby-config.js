@@ -6,7 +6,7 @@ module.exports = {
     description: "This is Irene's Portfolio Website",
     author: "Irene Perez",
     twitterUsername: "@devRene_0217",
-    image: "/pexels-negative-space-169573.jpg",
+    image: "/irene-perez.com.png",
     siteUrl: "https://irene-perez.netlify.app",
   },
   plugins: [
