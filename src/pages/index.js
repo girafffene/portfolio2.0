@@ -41,6 +41,14 @@ export const query = graphql`
           id
           name
         }
+        src {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        alt
       }
     }
 
