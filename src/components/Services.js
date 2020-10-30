@@ -7,7 +7,7 @@ import services from "../constants/services"
 
 const Services = () => {
   return (
-    <section className="section bg-purple">
+    <section className="section services">
       <Title title="services" />
 
       <div className="section-center services-center">
