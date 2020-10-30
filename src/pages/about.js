@@ -20,7 +20,8 @@ const About = ({
       <SEO title="About Me" description="This page is about Irene" />
       <section className="about-page">
         <div className="section-center about-center">
-          <Image fluid={image.childImageSharp.fluid} alt={imageAlt} style={{width: "350px", borderRadius: "15px"}}/>
+          <Image fluid={image.childImageSharp.fluid} alt={imageAlt} className="about-img" />
+          
           <article className="about-text">
             <Title title={title} />
             <p>{desc}</p>
