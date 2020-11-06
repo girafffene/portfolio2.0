@@ -5,9 +5,9 @@ module.exports = {
     title: "IPerez",
     description: "This is Irene's Portfolio Website",
     author: "Irene Perez",
-    twitterUsername: "@devRene_0217",
+    twitterUsername: "@devRene0217",
     image: "/irene-perez.com.png",
-    siteUrl: "https://irene-perez.netlify.app",
+    siteUrl: "https://irene-perez.com",
   },
   plugins: [
     `gatsby-transformer-sharp`,
