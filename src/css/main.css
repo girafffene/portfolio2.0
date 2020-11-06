@@ -187,6 +187,10 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.social-links-sidebar {
+  width: 10rem;
+  justify-content: space-around;
+}
 .social-link {
   font-size: 1.75rem;
   color: var(--clr-primary-4);
@@ -343,7 +347,7 @@ Navbar
 Sidebar
 ===============*/
 .sidebar {
-  background: ghostwhite;
+  background: var(--clr-light-1);
   position: fixed;
   top: 0;
   left: 0;

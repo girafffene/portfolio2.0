@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
       <div className="side-container">
         <Links styleClass={`${isOpen ? "sidebar-links" : ""}`} />
-        <SocialLinks styleClass={`${isOpen ? "sidebar-icons" : ""}`}/> 
+        <SocialLinks styleClass={`${isOpen ? "social-links-sidebar" : ""}`}/> 
       </div>
     </aside>
   )
